@@ -2,6 +2,6 @@
 
 defined('_JEXEC') or die;
 
-$controller = JControllerLegacy::getInstance('Bblurock');
+$controller = JControllerLegacy::getInstance('Stock');
 $controller->execute(JFactory::getApplication()->input->get('task'));
 $controller->redirect();

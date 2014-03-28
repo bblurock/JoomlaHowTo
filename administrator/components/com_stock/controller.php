@@ -3,10 +3,10 @@
 defined('_JEXEC') or die;
 
 /**
- * Class BblurockController
+ * Class StockController
  */
 
-class BblurockController extends JControllerLegacy
+class StockController extends JControllerLegacy
 {
 	protected  $default_view = 'items';
 }
