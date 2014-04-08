@@ -2,12 +2,14 @@
 <form>
 	<fieldset name="basic">
 		<field name="id"
-			type="input"
-		    label="ID"
-		    readonly="true"
-			/>
+			type="text"
+			label="id"
+			description="Item id"
+			default="0"
+			readonly="true"
+			class="readonly"/>
 		<field name="stock_number"
-		       type="number"
+		       type="text"
 		       label="股票代號"
 			/>
 	</fieldset>
