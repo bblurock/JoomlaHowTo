@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset name="basic">
+		<field name="id"
+			type="input"
+		    label="ID"
+		    readonly="true"
+			/>
+		<field name="stock_number"
+		       type="number"
+		       label="股票代號"
+			/>
+	</fieldset>
+</form>
