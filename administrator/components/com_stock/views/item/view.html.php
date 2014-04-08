@@ -1,10 +1,17 @@
 <?php
 
 /**
- * Class StockViewItems
+ * Class StockViewItem
  */
-class StockViewItems extends JViewLegacy
+class StockViewItem extends JViewLegacy
 {
+	/**
+	 * Property form.
+	 *
+	 * @var  array
+	 */
+	protected $form = array();
+
 	/**
 	 * @var array
 	 */
@@ -19,7 +26,10 @@ class StockViewItems extends JViewLegacy
 	 */
 	public function display($tpl = null)
 	{
-		$this->items = $this->get('Items');
+		$this->form = $this->get('Form');
+		$this->items = $this->get('Item');
+
+		$this->setToolBar();
 
 		return parent::display($tpl);
 	}
