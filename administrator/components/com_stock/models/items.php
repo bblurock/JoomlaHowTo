@@ -18,8 +18,6 @@ class StockModelItems extends JModelList
 		$query->select('stock.*')
 				->from('#__stock_items AS stock');
 
-		var_dump($query);
-
 		return $query;
 	}
 }

@@ -1,5 +1,10 @@
 <?php
 
+/**
+ * Class StockModelItem
+ *
+ * @since 1.0
+ */
 class StockModelItem extends JModelAdmin
 {
 	/**
@@ -12,14 +17,14 @@ class StockModelItem extends JModelAdmin
 	 */
 	public function getForm($data = array(), $loadData = true)
 	{
-		$option = array(
-			'control'  => 'jform',
-			'load_dat' => $loadData,
+		$options = array(
+			'control' => 'jform',
+			'load_data' => $loadData,
 		);
 
 		$key = $this->option . '.' . $this->name . '.form';
 
-		$form = $this->loadForm($key, $this->name, $option);
+		$form = $this->loadForm($key, $this->name, $options);
 
 		return $form;
 	}
@@ -54,10 +59,12 @@ class StockModelItem extends JModelAdmin
 		if ('' === $name)
 		{
 			$name = $this->getName();
+
 		}
 
 		return parent::getTable($name, $prefix, $options);
 	}
+
 	/**
 	 * Prepare and sanitise the table data prior to saving.
 	 *
