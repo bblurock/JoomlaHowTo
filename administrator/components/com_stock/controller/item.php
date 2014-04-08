@@ -1,9 +1,9 @@
 <?php
 
 /**
- * Class StockControlllerItem
+ * Class StockControllerItem
  */
-class StockControlllerItem extends JControllerForm
+class StockControllerItem extends JControllerForm
 {
 	/**
 	 * Method to get a model object, loading it if required.
